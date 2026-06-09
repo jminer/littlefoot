@@ -123,6 +123,7 @@ function prepareTemplateData<E extends Element>(
       id: String(index + 1),
       number: index + 1,
       reference: 'lf-' + id,
+      referenceText: reference.innerText,
       content: html.startsWith('<') ? html : '<p>' + html + '</p>',
     },
   ]
